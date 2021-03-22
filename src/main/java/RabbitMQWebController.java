@@ -1,12 +1,11 @@
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javainuse.model.Employee;
-import com.javainuse.service.RabbitMQSender;
+
+
 
 @RestController
 @RequestMapping(value = "/javainuse-rabbitmq/")
@@ -25,5 +24,7 @@ public class RabbitMQWebController {
 
         return "Message sent to the RabbitMQ JavaInUse Successfully";
     }
+
+    Employee emp  = new Employee();
 
 }

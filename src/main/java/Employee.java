@@ -28,4 +28,6 @@ public class Employee {
         return "Employee [empName=" + empName + ", empId=" + empId + "]";
     }
 
+    Employee emp  = new Employee();
+
 }
